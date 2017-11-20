@@ -63,9 +63,9 @@ if __name__ == '__main__':
         
         print "The encrypted text is : "
         print encrypt(input_txt, key)
-        
+        new_encryption = encrypt(input_txt, key)
+      
         print "The decrypted text is : "
-        print decrypt(input_txt, key)
+        print decrypt(new_encryption, key)
     else:
         print 'Invalid choice'
-
